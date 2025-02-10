@@ -108,6 +108,16 @@ u8 ItemId_GetHoldEffectParam(u16 itemId)
 	return gItems[SanitizeItemId(itemId)].holdEffectParam;
 }
 
+u8 GetPocketByItemId(u16 itemId)
+{
+	u8 pocket = gItems[SanitizeItemId(itemId)].pocket;
+	if (pocket > 5) {
+		return 0;
+	} else {
+		return pocket;
+	}
+}
+
 bool8 IsMegaStone(u16 item)
 {
 	return ItemId_GetHoldEffect(item) == ITEM_EFFECT_MEGA_STONE;

@@ -945,7 +945,6 @@ ItemId_GetPrice = 0x809A900 | 1;
 ItemId_GetDescription = 0x809A96C | 1;
 ItemIsUnique = 0x809A990 | 1;
 ItemId_GetMystery2 = 0x809A9B4 | 1;
-GetPocketByItemId = 0x809A9D8 | 1;
 ItemId_GetType = 0x809A9FC | 1;
 ItemId_GetFieldFunc = 0x809AA20 | 1;
 SetUpItemUseOnFieldCallback = 0x80A103C | 1;
